@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hollow Knight — сайт і презентація</title>
+  <style>
+    :root{--bg:#0b0f17;--card:#0f1720;--accent:#8aa2ff;--muted:#9aa4b2}
+    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,Arial;background:linear-gradient(180deg,#05060a 0%,#071025 60%);color:#e6eef8}
+    .container{max-width:980px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:72px;height:72px;border-radius:12px;background:radial-gradient(circle at 30% 20%,#b6c9ff22,#0000),linear-gradient(180deg,#111827,#0b1220);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:6px}
+    nav{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+    a.btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;text-decoration:none;color:inherit;font-weight:600}
+    section.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);padding:18px;border-radius:14px;margin-top:18px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .character{display:flex;gap:12px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:10px;background:#071422;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.03);font-weight:700}
+    .muted{color:var(--muted)}
+    .top-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+    footer{margin-top:26px;color:var(--muted);font-size:13px}
+    /* Presentation styles */
+    .slideshow{position:fixed;right:18px;bottom:18px;width:420px;height:260px;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.04)}
+    .slides{height:100%;width:100%;background:linear-gradient(180deg,#0b1220,#071025);display:flex;align-items:center;justify-content:center;padding:18px;box-sizing:border-box}
+    .slide{display:none;flex-direction:column;align-items:flex-start;gap:10px}
+    .slide.active{display:flex}
+    .slide h2{margin:0;font-size:20px}
+    .controls{display:flex;gap:8px;margin-top:8px}
+    .controls button{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:6px 10px;border-radius:8px;color:inherit}
+    /* Фікс для блоку, що прилипає справа внизу */
+.slides > * {
+  position: static !important;
+}
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  margin: 0;
+  box-shadow: none;
+}
+
+    /* Responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.slideshow{position:static;margin-top:12px;width:100%;height:auto}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <img style="display: block;
+        margin: auto;" src="https://static.wikia.nocookie.net/fcs-vs-battle/images/8/88/Hollow_Knight_Logo.png/revision/latest?cb=20231022155600" alt="">
+    </header>
+    <div class="logo">
+        <img src="https://static.wikia.nocookie.net/onevikiapan/images/6/62/%D0%9F%D0%BE%D0%BB%D1%8B%D0%B9_%D1%80%D1%8B%D1%86%D0%B0%D1%80%D1%8C_%D1%8D%D0%BA%D1%88%D0%B5%D0%BD.png/revision/latest?cb=20180712144440&path-prefix=ru" alt="" width="150s">
+      </div>
+      <div>
+        <h1>Hollow Knight — вшанування та короткий путівник</h1>
+        <p class="lead">Офіційний фансайт — опис гри, її механік, і топ-3 персонажів. Включена вбудована презентація, яку можна показати прямо з сайту.</p>
+      </div>
+    <nav>
+      <a class="btn" href="#about">Про гру</a>
+      <a class="btn" href="#characters">Топ-3 персонажів</a>
+      <a class="btn" href="#gallery">Галерея (замініть зображення)</a>
+      <a class="btn" href="#presentation">Презентація</a>
+    </nav>
+
+    <section id="about" class="card">
+      <h2>Про гру</h2>
+      <p class="muted"><strong>Hollow Knight</strong> — атмосферна інді-метроїдванія від студії Team Cherry. Гравець керує мовчазним Лицарем (The Knight), досліджує підземне королівство Hallownest, спілкується з персонажами, бореться з босами і відкриває таємниці. Гра відома своєю художньою атмосферою, складними боями та глибокою, прихованою оповіддю.</p>
+      <div class="grid">
+        <div>
+          <h3>Ключові елементи</h3>
+          <ul>
+            <li><strong>Дослідження:</strong> нелінійна карта з короткими та довгими шляхами.</li>
+            <li><strong>Бої:</strong> плавні, складні сутички з фокусом на майстерність.</li>
+            <li><strong>Магія і Здібності:</strong> шипи, заклинання, зачарування (charms).</li>
+            <li><strong>Атмосфера:</strong> художній стиль, мінімалістична музика та сюжет через світ та NPC.</li>
+          </ul>
+          <p class="muted">Порада: звертайте увагу на діалоги NPC — вони часто відкривають підказки про лор і приховані локації.</p>
+        </div>
+        <aside class="card" style="padding:12px">
+          <h4>Швидкі факти</h4>
+          <p class="muted">Розробник: Team Cherry<br>Жанр: Metroidvania / Action-Adventure<br>Платформи: PC, Nintendo Switch, PlayStation, Xbox (залежить від релізів)</p>
+          <p class="muted">Рік виходу: 2017</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="characters" class="card">
+      <h2>Топ-3 персонажів</h2>
+      <ol class="top-list">
+        <li class="character">
+          <div class="avatar">
+            <img src="https://static.wikia.nocookie.net/hollowknight/images/4/46/%D0%9F%D0%BE%D0%BB%D1%8B%D0%B9_%D1%80%D1%8B%D1%86%D0%B0%D1%80%D1%8C_%D0%BF%D0%B5%D1%80%D1%81.png/revision/latest?cb=20170712140421&path-prefix=ru" alt="" style="width:100%;height:auto;display:block">
+          </div>
+          <div>
+            <strong>The Knight (Рицар)</strong>
+            <div class="muted">Головний протагоніст — мовчазна фігура в масці. Маленький, але спритний; символ гравця — наповнений таємницями.</div>
+          </div>
+        </li>
+
+        <li class="character">
+          <div class="avatar">
+            <img src="https://static.wikia.nocookie.net/hollowknight/images/1/16/Hornet_Idle.png/revision/latest/thumbnail/width/360/height/360?cb=20251030203109" alt="" style="width:100%;height:auto;display:block">
+          </div>
+          <div>
+            <strong>Hornet (Горнет)</strong>
+            <div class="muted">Майстерна воїнка з гострим списом, яка виступає і як антагоніст, і як союзник у різні моменти. Сильний персонаж з власною історією та мотивацією.</div>
+          </div>
+        </li>
+
+        <li class="character">
+          <div class="avatar">
+            <img src="https://static.wikia.nocookie.net/hollowknight/images/5/52/B_Radiance.png/revision/latest?cb=20170412205005" alt="" style="width:100%;height:auto;display:block">
+          </div>
+          <div>
+            <strong>Radiance</strong>
+            <div class="muted">Одна з центральних фігур лору — істота, яка впливає сюжет. Головний антоганіст гри</div>
+          </div>
+        </li>
+      </ol>
+
+      <p class="muted" style="margin-top:12px">Примітка: це суб'єктивний вибір — інші улюбленці фанатів включають Grimm, Quirrel, Zote та Hornet's family.</p>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>Галерея</h2>  
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div style="width:220px;border-radius:10px;overflow:hidden;background:#071022;padding:8px">
+          <img src="https://static.wikia.nocookie.net/onevikiapan/images/6/62/%D0%9F%D0%BE%D0%BB%D1%8B%D0%B9_%D1%80%D1%8B%D1%86%D0%B0%D1%80%D1%8C_%D1%8D%D0%BA%D1%88%D0%B5%D0%BD.png/revision/latest?cb=20180712144440&path-prefix=ru" alt="The Knight" style="width:100%;height:auto;display:block">
+          <div style="padding:8px"><strong>The Knight</strong><div class="muted">Головний герой</div></div>
+        </div>
+        <div style="width:220px;border-radius:10px;overflow:hidden;background:#071022;padding:8px">
+          <img src="https://i.redd.it/hornet-from-hollow-knight-silksong-v0-6vs356adzo1e1.png?width=1335&format=png&auto=webp&s=606c71808c4479f6606d8f18bdfa9b50fe0f65da" alt="Hornet" style="width:100%;height:auto;display:block">
+          <div style="padding:8px"><strong>Hornet</strong><div class="muted">Суперниця та партнерка</div></div>
+        </div>
+        <div style="width:220px;border-radius:10px;overflow:hidden;background:#071022;padding:8px">
+          <img src="https://static.wikia.nocookie.net/hollowknight/images/5/52/B_Radiance.png/revision/latest?cb=20170412205005" alt="Hollow Knight" style="width:100%;height:auto;display:block">
+          <div style="padding:8px"><strong>Radiance</strong><div class="muted">Головне зло гри</div></div>
+        </div>
+      </div>
+    </section>
+        <div class="slideshow" aria-hidden="false">
+  ..<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS9-E9LpLv_AaPRQ2e1ETt4VvnRQ5T7CG6nZhmXUEFV1gawgNfDEbp6qMF2h7vBJGI24yscuDnVyp7A/pub?start=false&loop=false&delayms=15000"
+        frameborder="0" width="960" height="569" allowfullscreen></iframe>
+
+        </div>
+
+  <script>
+    // Простий JS для презентації
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    let idx = 0;
+    function show(i){
+      slides.forEach(s=>s.classList.remove('active'));
+      idx = (i+slides.length)%slides.length;
+      slides[idx].classList.add('active');
+    }
+    document.getElementById('next').addEventListener('click',()=>show(idx+1));
+    document.getElementById('prev').addEventListener('click',()=>show(idx-1));
+    document.getElementById('print').addEventListener('click',()=>window.print());
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'ArrowRight') show(idx+1);
+      if(e.key === 'ArrowLeft') show(idx-1);
+    });
+  </script>
+</body>
+</html>
