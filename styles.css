@@ -4,7 +4,7 @@
         --accent:#8aa2ff;   
         --muted:#9aa4b2
     }
-    html,body {
+    body {
         height:100%;margin:0;
         font-family:Inter,Segoe UI,Roboto,system-ui,Arial;
         background:linear-gradient(180deg,#05060a 0%,#071025 60%);
@@ -53,7 +53,7 @@
         font-weight:600
     }
     section.card {
-        background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+        background:linear-gradient( 180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.005)); 
         border:1px solid rgba(255,255,255,0.03);
         padding:18px;
         border-radius:14px;
@@ -96,7 +96,7 @@
         margin-top:26px;
         color:var(--muted);
         font-size:13px}
-        
+
 
 .slideshow {
   position: relative;
