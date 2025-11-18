@@ -1,9 +1,4 @@
-    :root {
-        --bg:#0b0f17; 
-        --card:#0f1720; 
-        --accent:#8aa2ff;   
-        --muted:#9aa4b2
-    }
+
     body {
         height:100%;margin:0;
         font-family:Inter,Segoe UI,Roboto,system-ui,Arial;
