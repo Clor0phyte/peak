@@ -2,13 +2,13 @@
     body {
         height:100%;margin:0;
         font-family:Inter,Segoe UI,Roboto,system-ui,Arial;
-        background:linear-gradient(180deg,#05060a 0%,#071025 60%);
+        background:#0a1a2a; 
         color:#e6eef8
     }
     .container {
         max-width:980px;
-        margin:36px
-         auto;padding:24px
+        margin:36px auto;
+        padding:24px
         }
     header {
         display:flex;
@@ -19,7 +19,6 @@
         width:72px;
         height:72px;
         border-radius:12px;
-        background:radial-gradient(circle at 30% 20%,#b6c9ff22,#0000),linear-gradient(180deg,#111827,#0b1220);
         display:flex;
         align-items:center;
         justify-content:center;
@@ -47,23 +46,24 @@
         color:inherit;
         font-weight:600
     }
-    section.card {
-        background:linear-gradient( 180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.005)); 
+    section.card { 
         border:1px solid rgba(255,255,255,0.03);
         padding:18px;
+        background: #071422;
         border-radius:14px;
         margin-top:18px
     }
     .grid {
         display:grid;
-        grid-template-columns:1fr 
-        320px;
+        grid-template-columns:1fr 320px;
         gap:18px
     }
     .character {
         display:flex;
         gap:12px;
-        align-items:center
+        align-items:center;
+        background: #0a1a2a;
+        
     }
     .avatar {
         width:84px;
